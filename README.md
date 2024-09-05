@@ -1,8 +1,11 @@
-# React + Vite
+# PandaMonkeyCard
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+[![status: active](https://opensource.twitter.dev/status/active.svg)]()
 
-Currently, two official plugins are available:
+## Description
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+similar to beacons, linktr and other link in bio but i code it on my own to learn a little about React
+
+Author: Phosphor Icons (https://www.iconfinder.com/phosphor-icons)
+License: MIT License (http://opensource.org/licenses/MIT)
+My logo is made by Arkus Noble
