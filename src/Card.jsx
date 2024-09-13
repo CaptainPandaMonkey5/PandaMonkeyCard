@@ -8,6 +8,7 @@ import linkedin from "./assets/linkedin.png";
 import xlogo from "./assets/x_logo.png";
 import instagram from "./assets/instagram.png";
 import twitter from "./assets/twitter.png";
+import randomdice from "./assets/random_dice.png";
 
 function Card() {
   useCustomScript();
@@ -31,7 +32,7 @@ function Card() {
             data-link="https://github.com/Lucianono/ShelterAlloc_Thesis"
           >
             <img src={recentProject} alt="code" className="h-6 w-6" />
-            <span className="text-center">recent projects</span>
+            <span className="text-center">recent project</span>
           </button>
 
           <button
@@ -52,6 +53,14 @@ function Card() {
 
           <button
             className="btn btn-warning flex w-80 items-center rounded-2xl border-2 border-[#333333] text-lg font-bold shadow-[5px_10px_0px_0px_rgba(51,51,51,1)] transition duration-500 hover:bg-gray-500 hover:text-white hover:shadow-[0_0_0_0_rgba(0,0,0,0)]"
+            data-link="https://captainpandamonkey5.github.io/RandomPicker/"
+          >
+            <img src={randomdice} alt="icon" className="mr-2 h-6 w-6" />
+            <span className="text-center">randompicker website</span>
+          </button>
+
+          <button
+            className="btn btn-warning flex w-80 items-center rounded-2xl border-2 border-[#333333] text-lg font-bold shadow-[5px_10px_0px_0px_rgba(51,51,51,1)] transition duration-500 hover:bg-gray-500 hover:text-white hover:shadow-[0_0_0_0_rgba(0,0,0,0)]"
             data-link="https://twitter.com/CptPandaMonkey"
           >
             <img src={twitter} alt="x" className="h-6 w-6" />
@@ -67,8 +76,8 @@ function Card() {
           </button>
 
           <button
-            className="btn btn-disabled btn-warning flex w-80 items-center rounded-2xl border-2 border-[#333333] text-lg font-bold shadow-[5px_10px_0px_0px_rgba(51,51,51,1)] transition duration-500 hover:bg-gray-500 hover:text-white hover:shadow-[0_0_0_0_rgba(0,0,0,0)]"
-            data-link="https://example.com"
+            className="btn btn-warning flex w-80 items-center rounded-2xl border-2 border-[#333333] text-lg font-bold shadow-[5px_10px_0px_0px_rgba(51,51,51,1)] transition duration-500 hover:bg-gray-500 hover:text-white hover:shadow-[0_0_0_0_rgba(0,0,0,0)]"
+            data-link="https://www.linkedin.com/in/lovely-cunanan-9aa1b130b/"
           >
             <img src={linkedin} alt="linkedin" className="h-6 w-6" />
             <span className="text-center">linkedin</span>
