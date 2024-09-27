@@ -22,7 +22,9 @@ function Card() {
           alt="profile_img"
         />
         <h1 className="text-4xl font-bold">PandaMonkey</h1>
-        <p className="mt-2 text-base">Hello!</p>
+        <p className="mt-2 text-base">
+          Hello! I'm Sam currently in my 4th Year in Computer Science
+        </p>
       </div>
 
       <div className="mx-auto flex max-w-7xl flex-col items-center justify-center">
@@ -83,6 +85,12 @@ function Card() {
             instagram
           </button>
         </div>
+        <footer class="footer footer-center p-5 text-black">
+          <aside>
+            <p class="font-bold">CaptainPandaMonkey</p>
+            <p>Copyright © 2024 - All right reserved</p>
+          </aside>
+        </footer>
       </div>
     </>
   );
