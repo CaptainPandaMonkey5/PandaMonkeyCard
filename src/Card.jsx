@@ -5,10 +5,65 @@ import recentProject from "./assets/code.png";
 import github from "./assets/github.svg";
 import user from "./assets/user.png";
 import linkedin from "./assets/linkedin.png";
-import xlogo from "./assets/x_logo.png";
-import instagram from "./assets/instagram.png";
 import twitter from "./assets/twitter.png";
+import instagram from "./assets/instagram.png";
 import randomdice from "./assets/random_dice.png";
+
+const buttonsData = [
+  {
+    link: "https://github.com/Lucianono/ShelterAlloc_Thesis",
+    icon: recentProject,
+    label: "recent project",
+    disabled: false,
+  },
+  {
+    link: "https://captainpandamonkey5.github.io/RandomPicker/",
+    icon: randomdice,
+    label: "randompicker website",
+    disabled: false,
+  },
+  {
+    link: "https://captainpandamonkey5.github.io/CPM-Alpha/src/index.html",
+    icon: user,
+    label: "more about me",
+    disabled: true,
+  },
+  {
+    link: "https://github.com/CaptainPandaMonkey5",
+    icon: github,
+    label: "github",
+    disabled: false,
+  },
+  {
+    link: "https://www.linkedin.com/in/lovely-cunanan-9aa1b130b/",
+    icon: linkedin,
+    label: "linkedin",
+    disabled: false,
+  },
+  {
+    link: "https://twitter.com/CptPandaMonkey",
+    icon: twitter,
+    label: "twitter",
+    disabled: false,
+  },
+  {
+    link: "https://www.instagram.com/captainpandamonkey/",
+    icon: instagram,
+    label: "instagram",
+    disabled: false,
+  },
+];
+
+const SocialButton = ({ link, icon, label, disabled }) => (
+  <button
+    className="btn btn-warning flex w-80 items-center justify-center rounded-2xl border-2 border-[#333333] text-lg font-bold shadow-[5px_10px_0px_0px_rgba(51,51,51,1)] transition duration-500 hover:bg-gray-500 hover:text-white hover:shadow-[0_0_0_0_rgba(0,0,0,0)]"
+    data-link={link}
+    disabled={disabled}
+  >
+    <img src={icon} alt={label} className="mr-2 h-6 w-6" />
+    <span className="text-center">{label}</span>
+  </button>
+);
 
 function Card() {
   useCustomScript();
@@ -29,66 +84,20 @@ function Card() {
 
       <div className="mx-auto flex max-w-7xl flex-col items-center justify-center">
         <div className="flex flex-col items-center space-y-6 py-5">
-          <button
-            className="btn btn-warning flex w-80 items-center justify-center truncate rounded-2xl border-2 border-[#333333] text-lg font-bold shadow-[5px_10px_0px_0px_rgba(51,51,51,1)] transition duration-500 hover:bg-gray-500 hover:text-white hover:shadow-[0_0_0_0_rgba(0,0,0,0)]"
-            data-link="https://github.com/Lucianono/ShelterAlloc_Thesis"
-          >
-            <img src={recentProject} alt="code" className="h-6 w-6" />
-            <span className="text-center">recent project</span>
-          </button>
-
-          <button
-            className="btn btn-warning flex w-80 items-center rounded-2xl border-2 border-[#333333] text-lg font-bold shadow-[5px_10px_0px_0px_rgba(51,51,51,1)] transition duration-500 hover:bg-gray-500 hover:text-white hover:shadow-[0_0_0_0_rgba(0,0,0,0)]"
-            data-link="https://captainpandamonkey5.github.io/RandomPicker/"
-          >
-            <img src={randomdice} alt="icon" className="mr-2 h-6 w-6" />
-            <span className="text-center">randompicker website</span>
-          </button>
-
-          <button
-            className="btn btn-warning flex w-80 items-center rounded-2xl border-2 border-[#333333] text-lg font-bold shadow-[5px_10px_0px_0px_rgba(51,51,51,1)] transition duration-500 hover:bg-gray-500 hover:text-white hover:shadow-[0_0_0_0_rgba(0,0,0,0)]"
-            data-link="https://captainpandamonkey5.github.io/CPM-Alpha/src/index.html"
-          >
-            <img src={user} alt="icon" className="mr-2 h-6 w-6" />
-            <span className="text-center">more about me</span>
-          </button>
-
-          <button
-            className="btn btn-warning flex w-80 items-center justify-center rounded-2xl border-2 border-[#333333] text-lg font-bold shadow-[5px_10px_0px_0px_rgba(51,51,51,1)] transition duration-500 hover:bg-gray-500 hover:text-white hover:shadow-[0_0_0_0_rgba(0,0,0,0)]"
-            data-link="https://github.com/CaptainPandaMonkey5"
-          >
-            <img src={github} alt="github" className="h-6 w-6" />
-            <span className="text-center">github</span>
-          </button>
-
-          <button
-            className="btn btn-warning flex w-80 items-center rounded-2xl border-2 border-[#333333] text-lg font-bold shadow-[5px_10px_0px_0px_rgba(51,51,51,1)] transition duration-500 hover:bg-gray-500 hover:text-white hover:shadow-[0_0_0_0_rgba(0,0,0,0)]"
-            data-link="https://www.linkedin.com/in/lovely-cunanan-9aa1b130b/"
-          >
-            <img src={linkedin} alt="linkedin" className="h-6 w-6" />
-            <span className="text-center">linkedin</span>
-          </button>
-
-          <button
-            className="btn btn-warning flex w-80 items-center rounded-2xl border-2 border-[#333333] text-lg font-bold shadow-[5px_10px_0px_0px_rgba(51,51,51,1)] transition duration-500 hover:bg-gray-500 hover:text-white hover:shadow-[0_0_0_0_rgba(0,0,0,0)]"
-            data-link="https://twitter.com/CptPandaMonkey"
-          >
-            <img src={twitter} alt="x" className="h-6 w-6" />
-            twitter
-          </button>
-
-          <button
-            className="btn btn-warning flex w-80 items-center rounded-2xl border-2 border-[#333333] text-lg font-bold shadow-[5px_10px_0px_0px_rgba(51,51,51,1)] transition duration-500 hover:bg-gray-500 hover:text-white hover:shadow-[0_0_0_0_rgba(0,0,0,0)]"
-            data-link="https://www.instagram.com/captainpandamonkey/"
-          >
-            <img src={instagram} alt="ig" className="h-6 w-6" />
-            instagram
-          </button>
+          {buttonsData.map((button, index) => (
+            <SocialButton
+              key={index}
+              link={button.link}
+              icon={button.icon}
+              label={button.label}
+              disabled={button.disabled}
+            />
+          ))}
         </div>
-        <footer class="footer footer-center p-5 text-black">
+        <footer className="footer footer-center p-5 text-black">
           <aside>
-            <p class="font-bold">CaptainPandaMonkey</p>
-            <p>Copyright © 2024 - All right reserved</p>
+            <p className="font-bold">CaptainPandaMonkey</p>
+            <p>Copyright © 2024 - All rights reserved</p>
           </aside>
         </footer>
       </div>
