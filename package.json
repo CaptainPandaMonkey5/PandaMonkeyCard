@@ -2,7 +2,7 @@
   "name": "pandamonkeycard",
   "private": true,
   "homepage": "https://CaptainPandaMonkey5.github.io/PandaMonkeyCard",
-  "version": "0.0.0",
+  "version": "0.5.0",
   "type": "module",
   "scripts": {
     "dev": "vite",
