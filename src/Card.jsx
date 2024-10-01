@@ -18,7 +18,7 @@ const buttonsData = [
     disabled: false,
   },
   {
-    link: "https://captainpandamonkey5.github.io/RandomPicker/",
+    link: "https://captainpandamonkey5.github.io/randompicker/",
     icon: randomdice,
     label: "randompicker website",
     disabled: false,
