@@ -8,6 +8,7 @@ import linkedin from "./assets/linkedin.png";
 import twitter from "./assets/twitter.png";
 import instagram from "./assets/instagram.png";
 import randomdice from "./assets/random_dice.png";
+import CopyLinkButton from "./CopyLinkButton"; // Import the CopyLinkButton component
 
 const buttonsData = [
   {
@@ -17,7 +18,7 @@ const buttonsData = [
     disabled: false,
   },
   {
-    link: "https://captainpandamonkey5.github.io/RandomPicker/",
+    link: "https://captainpandamonkey5.github.io/randompicker/",
     icon: randomdice,
     label: "randompicker website",
     disabled: false,
@@ -77,9 +78,12 @@ function Card() {
           alt="profile_img"
         />
         <h1 className="text-4xl font-bold">PandaMonkey</h1>
-        <p className="mt-2 text-base">
+        <p className="mx-auto mt-2 items-center text-center text-base">
           Hello! I'm Sam currently in my 4th Year in Computer Science
         </p>
+        <div className="my-2">
+          <CopyLinkButton />
+        </div>
       </div>
 
       <div className="mx-auto flex max-w-7xl flex-col items-center justify-center">
